@@ -1,0 +1,94 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  padding: 1rem;
+  margin: 0;
+  color: #334155;
+  line-height: 1.6;
+}
+
+/* Main Container Styling (Card-like appearance) */
+.container {
+  max-width: 550px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700; /* Bold */
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 1.8rem; /* Space below heading */
+}
+
+/* Form Styling */
+#guest-form {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 0.8rem; /* Consistent gap between form elements */
+  margin-bottom: 2rem;
+  align-items: stretch; /* Ensure elements stretch to fill height */
+}
+
+input,
+select {
+  flex: 2; /* Allows input and select to take more space */
+  padding: 0.8rem 1rem;
+  border: 1px solid #cbd5e1; /* Light gray border */
+  border-radius: 0.6rem; /* Rounded corners */
+  font-size: 1rem;
+  color: #475569; /* Slate gray text */
+}
+
+input[type="text"]::placeholder {
+  color: #94a3b8; /* Lighter placeholder text */
+}
+
+input[type="text"]:focus,
+select:focus {
+  outline: none;
+  border-color: #60a5fa; /* Blue focus border */
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.3),
+    inset 0 1px 3px rgba(0, 0, 0, 0.08); /* Blue glow on focus */
+}
+
+button {
+  flex: 1; /* Button takes remaining space */
+  background-color: #2563eb; /* Primary blue button */
+  color: white;
+  font-weight: 600;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+button:active {
+  transform: translateY(0); /* Press effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Guest List Styling */
+#guest-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; /* Space between list items */
+}
