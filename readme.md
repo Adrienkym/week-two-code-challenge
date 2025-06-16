@@ -35,4 +35,4 @@ That's it! The application is entirely client-side and requires no server setup.
 
 ---
 
-## Project Structure
+
