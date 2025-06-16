@@ -1,4 +1,4 @@
-//
+//give access so that the js can access the HTML elements
 const form = document.getElementById("guest-form");
 const guestList = document.getElementById("guest-list");
 const guestName = document.getElementById("guest-name");
@@ -75,10 +75,6 @@ function displayGuests() {
 function clearGuestList() {
   guests = []; // Reset the guests array to an empty array
   displayGuests(); // Update the display to show the cleared list
-}
-function removeGuest(id) {
-  guests = guests.filter((g) => g.id !== id);
-  renderGuests();
 }
 
 
